@@ -4,60 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mytoehertz</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body> 
 
-        <div>
+<!-- Nav Bar - need to make disapear after folding element - leading to four pane link -->
+<div>
+  <ul>
+    <li><a class="active" href="mytoehertz.html">Home</a></li>
+    <li><a href="#Portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float:right"><a href="index.html">About</a></li>
+  </ul>
+</div>  
 
-
-        </div>
-
-        <div class="hero-image">
+<!--Main Image and Intro - need to add folding element-->
+   <div class="hero-image">
                 <div class="hero-text">
                   <h1 style="font-size:50px">I am Juan Hernandez</h1>
                   <h3>Aspiring polymath, barista, </h3>
                   <h3>manager and full stack developer</h3>
                   <button class="button">Contact me!</button>
                 </div>
-         </div>
+      </div>
 
-        <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="float:right"><a href="#about">About</a></li>
-              </ul>
+<!--Four cards, stack in two rows and columns-->
+   <div class="row">
+           <div class="polaroid">
+             <img src="Portfolio.jpg" alt="Portfolio" class="img-rounded" style="width:600px; height: 600px">
+                        <div class="container">
+                              <button class="button">My Portfolio!</button>
+                      </div>
+                    </div>
+                
+           <div class="polaroid">
+                      <img src="Barista Training.jpg" alt="Barista Training" class="img-rounded" style="width:600px; height: 600px;transform: translate(-9%, -21%)">
+                        <div class="container">
+                          <button class="button">Barista Classes!</button>
+                        </div>
+                    </div>
+                
+           <div class="polaroid">
+                      <img src="consulting.jpg" alt="Cafe Consulting" class="img-rounded" style="width:600px; height: 600px;transform: translate(-5%, -10%)">
+                        <div class="container">
+                            <button class="button">Cafe Consulting</button>
+                      </div>
+                  </div>
 
+          <div class="polaroid">
+                    <img src="Profile FB.jpg" alt="Juan Hernandez Picture" class="img-rounded" style="width:600px; height: 600px;transform: translate(-5%, -10%)">
+                      <div class="container" >
+                          <button class="button"><a href="index.html">About me!</a></button>
+                      </div>
 
-        <div>
-               
-            <p style="color:white"> Juan Hernandez </p>
+            </div>
+       </div>
 
+<!--Footer with social links-->
+        <div id="grad1" class="flex-container">
+        
+          <div >
+              <a href="https://github.com/mytoehertz/mytoehertz">
+                  <img src="Octocat.jpg" alt="Github" class="img-rounded" style="width:80px;height:80px;" >
+                </a>
+          </div>
+          
+          <div>
+              <a href="index.html">Portfolio</a>
+          </div>
+          
+          <div> <a href="#Contact">Contact Me</a> </div>
         </div>
 
-        <div class="row">
-                <div class="column">
-                  <h2>Column</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt repellendus, dolorum ad alias libero dolores recusandae iure sint voluptates corporis accusamus, quo tenetur reprehenderit quos consectetur illo iusto voluptatibus omnis.</p>
-                </div>
-                
-                <div class="column">
-                  <h2>Column</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, qui nisi quia vel, earum, doloremque aspernatur amet consequatur repellendus ex itaque error eaque et voluptatibus incidunt excepturi nostrum nam non.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                </div>
-                
-                <div class="column">
-                  <h2>Column</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam beatae voluptas voluptate nesciunt qui facilis in, quasi distinctio veniam ut neque aliquid debitis, reprehenderit soluta non nobis tempora! Recusandae, atque.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                </div>
-              </div>
 </body>
     
 </html>
