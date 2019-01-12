@@ -1,5 +1,5 @@
 html { 
-    background: url(tree.jpg) no-repeat center fixed; 
+    background: url(../images/tree.jpg) no-repeat center fixed; 
     background-size: cover;
     }
 
@@ -9,7 +9,7 @@ body {
       }
 
 .hero-image {
-    background: url(Juan_Hernandez.jpg) no-repeat center; 
+    background: url(../images/Juan_Hernandez.jpg) no-repeat center; 
     background-size: cover;
     height: 750px;
     position: relative;
@@ -42,20 +42,6 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
     }  
-
-.ulfooter{
-    background-color: #333;
-    color: white;
-    margin: 50px;
-    padding: 50px;
-    }
-
-.lifooter{
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    border-right: 5px solid #bbb
-    }
 
 ul {
     list-style-type: none;
