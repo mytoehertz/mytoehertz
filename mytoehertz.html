@@ -2,87 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
-<body style="background: url(assets/images/tree.jpg) no-repeat center fixed; 
-background-size: cover"> 
+<body>
 
-<!-- Nav Bar - need to make disapear after folding element - leading to four pane link -->
-<div>
-  <ul>
-    <li><a class="active" href="mytoehertz.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contactme.html">Contact</a></li>
-    <li style="float:right"><a href="index.html">About</a></li>
-  </ul>
-</div>  
 
-<!--Main Image and Intro - need to add folding element-->
-   <div class="hero-image">
-                <div class="hero-text">
-                  <h1 style="font-size:50px">I am Juan Hernandez</h1>
-                  <h3>Aspiring polymath, barista, </h3>
-                  <h3>manager and full stack developer</h3>
-                  <button class="button">Contact me!</button>
-                </div>
+
+  <div class="parallax">
+
+
+    <div class="topnav">
+      <a class="active" href="mytoehertz.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contactme.html">Contact</a>
+      <a href="index.html">About</a>
+    </div>
+
+
+    <!--Main Image and Intro - need to add folding element-->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">I am Juan Hernandez</h1>
+        <h3>Aspiring polymath, barista, </h3>
+        <h3>manager and full stack developer</h3>
+        <button class="button"><a href="contactme.html">Contact me</a></button>
       </div>
-
-<!--Four cards, stack in two rows and columns-->
-   <div class="row">
-           <div class="polaroid">
-             <img src="assets/images/Portfolio.jpg" alt="Portfolio" class="img-rounded" style="width:600px; height: 600px">
-                        <div class="container">
-                              <button class="button"> <a href="portfolio.html">Portfolio</a></button>
-                      </div>
-                    </div>
-                
-           <div class="polaroid">
-                      <img src="assets/images/Barista Training.jpg" alt="Barista Training" class="img-rounded" style="width:600px; height: 600px;transform: translate(-9%, -21%)">
-                        <div class="container">
-                          <button class="button">Barista Classes!</button>
-                        </div>
-                    </div>
-                
-           <div class="polaroid">
-                      <img src="assets/images/consulting.jpg" alt="Cafe Consulting" class="img-rounded" style="width:600px; height: 600px;transform: translate(-5%, -10%)">
-                        <div class="container">
-                            <button class="button">Cafe Consulting</button>
-                      </div>
-                  </div>
-
-          <div class="polaroid">
-                    <img src="assets/images/Profile FB.jpg" alt="Juan Hernandez Picture" class="img-rounded" style="width:600px; height: 600px;transform: translate(-5%, -10%)">
-                      <div class="container" >
-                          <button class="button"><a href="index.html">About me!</a></button>
-                      </div>
-
-            </div>
-       </div>
-
-<!--Footer with social links-->
-        <div id="grad1" class="flex-container">
+    </div>
+    <div class="container">
+      <p>
+        Freelance professional with experience in:
+      </p>
+      <div class="flex-container">
+       
+          <div>Full Stack Development</div>
+          <div>Coffee Industry</div>
+          <div>Business Management</div>
+          <div>Marketing and Event Programing</div>
+          <div>Sales and team management</div>
         
-          <div >
-              <a href="https://github.com/mytoehertz/mytoehertz">
-                  <img src="assets/images/Octocat.jpg" alt="Github" class="img-rounded" style="width:80px;height:80px;" >
-                </a>
-          </div>
-          
-          <div>
-              <a href="index.html">Portfolio</a>
-          </div>
-          
-          <div> <a href="#Contact">Contact Me</a> </div>
         </div>
 
+    </div>
+
+    <div class="container"style="height:350px">
+      <div class="parallax2">
+        <!--Four cards, stack in two rows and columns-->
+        <div class="clearfix center">
+          <!--First card for portfolio-->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/Portfolio.jpg" alt="Portfolio" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Web Develpment</h1>
+                <p>Web apps that I have</p>
+                <p>worked on. Links to live and github below</p>
+                <button class="button"><a href="portfolio.html">Portfolio</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/baristatrain.jpg" alt="Barista Classes" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Barista Classes</h1>
+                <p>Want to polish your barista skills?</p>
+                <p>Looking to bring an expert to teach your employees?</p>
+                <button class="button"><a href="contactme.html">Contact Me</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Second row of the two flip cards-->
+
+    <div class="container" style="height:350px">
+      <div class="parallax2">
+        <div class="clearfix center">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/consulting.jpg" alt="Consulting" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Cafe and Business Consulting</h1>
+                <p>Need help with procedures? forms?</p>
+                <p>I'll help you set your cafe up for success!@</p>
+                <button class="button"><a href="contactme.html">Contact Me</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/profile.jpg" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Juan Hernandez</h1>
+                <p>Curious about me?</p>
+                <p>Take a look at my other business and projects below!</p>
+                <button class="button"><a href="index.html">About me</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <p>
+          Testy
+        </p>
+    </div>
+
+    <!--Footer with social links-->
+    <div id="grad1" class="flex-container">
+
+      <div>
+        <a href="https://github.com/mytoehertz/mytoehertz">
+          <img src="assets/images/Octocat.jpg" alt="Github" style="width:100%;height:100%;border:0;">
+        </a>
+      </div>
+
+      <div>
+        <a href="portfolio.html">
+          <img src="assets/images/coding.jpg" alt="Github" style="width:100%;height:100%;border:0;">
+        </a>
+      </div>
+
+      <div>
+        <a href="contactme.html">
+          <img src="assets/images/aboutme.jpg" alt="Github" style="width:100%;height:100%;border:0;">
+        </a>
+      </div>
+    </div>
+  </div>
+
 </body>
-    
+
 </html>
